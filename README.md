@@ -1,2 +1,1 @@
-# HTML_testSites
-html pages with navigation
+HTML_testSites
