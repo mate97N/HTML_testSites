@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<!--Nagy Gyula feladatai-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Programozó tanfolyam">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="HTMLCSS01.html">Főoldal</a>
+            <a href="kedvenc-könyvek.html">Kedvenc Könyvek</a>  
+            <a href="kepek.html">Képek</a> |
+            <a href="weboldalak.html">Weboldalak</a> |
+            <a href="kontaktok.html">Kapcsolatok</a>
+            <a href="kerdöiv.html">Kérdőív</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Kérjük, töltse ki a következő kérdőívet!</h2>
+        <form action="#" method="GET">
+            Vezetéknév: <input type="text" name="fname" value="Vezetéknév"><br><br>
+            Utónév: <input type="text" name="lname" value="Utónév"><br><br>
+            Életkor:  <select name="age">
+                        <option value="young">- 30</option>
+                        <option value="middle">31-50</option>
+                        <option value="old">51-</option>
+                      </select><br><br>
+            Kedvenc fagyi:<br>
+                  <input type="radio" name="ice cream" value="chocolate" checked>csoki<br>
+                  <input type="radio" name="ice cream" value="vanilla" >vanília<br>
+                  <input type="radio" name="ice cream" value="strawberry" >eper<br>
+                  <input type="radio" name="ice cream" value="banana" >banán<br>
+                  <input type="radio" name="ice cream" value="yogurt sour cherry" >yoghurtos meggy<br><br>
+                  <br>
+            Utazási lehetőségek:<br>
+                    <select name="travel" size="3" multiple>
+                      <option value="car">Autó</option>
+                      <option value="train">Vonat</option>
+                      <option value="bus">Busz</option>
+                      <option value="bycicle">Kerékpár</option>
+                      <option value="other">egyéb</option>
+                    </select><br><br><br>
+            Írj a kedvenc időtöltésedről két mondatot:<br>
+                    <textarea name="message" rows="10" cols="30">
+                    </textarea><br><br>
+                  <input type="checkbox" name="newsletter" value="true" checked>Feliratkozás hírlevélre<br><br>
+
+                  <input type="checkbox" name="gratis" value="true">Kérek ajándékot<br><br>
+
+                  <input type="checkbox" name="family" value="true">Családos vagyok<br><br>
+            Regisztráció:<br>
+            Felhasználónév:<br>
+                  <input type="text" name="username" required><br>
+            Jelszó:<br>
+                  <input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="A jelszónak tartalmaznia kell legalább egy számot, egy kis- és nagybetűt, és min. 8, max. 24 karakternek kell lennie!" required><br>
+            E-mail:<br>
+                  <input type="email" name="email" required><br><br>
+
+                  <button type="submit" value="send">Elküldés</button>
+                
+            <!--A GET methoddal kapott url: file:///home/nagygyula/Dokumentumok/sites/learn_c/kerdöiv.html?fname=Nagy&lname=Gyula&age=middle&ice+cream=yoghurtos_meggy&travel=car&message=+Nagyon+szeretek+olvasni.+Főleg+regényeket.&newsletter=true&gratis=true&username=Ivan56&pass=123Ert456&email=ivanovics200%40gmail.com#-->
+        </form>
+    </main>
+    <footer>
+        <p>Post by Gyula</p>
+        <p>E-mail: <a href="#">nagy70gyula@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
